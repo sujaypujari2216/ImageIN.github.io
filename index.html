@@ -7,12 +7,43 @@
     <title>ImageIn</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
 </head>
 
 <body>
-    <h1>Hello World!!</h1>
+    <!-- Access Key: jsbQwXIeybQ-iq80Silc2vQTJJKK0JVoyEK6p5pKrjg -->
+    <nav class="navbar">
 
-    <script src="js/script.js"></script>
+        <img src="img/logo.png" alt="logo">
+
+        <div class="search-container">
+            <div class="searchForm">
+                <input type="text" id="searchBox" placeholder="Search.." value="flowers">
+                <button onclick="search()"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+
+        <div class="view">
+            <a onclick="listView()"><i class="fa fa-bars"></i>List</a>
+            <a class="active" onclick="gridView()"><i class="fa fa-th-large"></i>Grid</a>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <div class="details" id="topic"></div>
+
+        <div id="result"></div>
+
+        <div class="wrapper">
+            <button onclick="loadMore()" class="load-more">More Images</button>
+        </div>
+    </div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
 
 </html>
