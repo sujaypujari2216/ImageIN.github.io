@@ -26,8 +26,8 @@
         </div>
 
         <div class="view">
-            <a onclick="listView()"><i class="fa fa-bars"></i>List</a>
-            <a class="active" onclick="gridView()"><i class="fa fa-th-large"></i>Grid</a>
+            <a id="list" onclick="listView()"><i class="fa fa-bars"></i>List</a>
+            <a id="grid" class="active" onclick="gridView()"><i class="fa fa-th-large"></i>Grid</a>
         </div>
 
     </nav>
@@ -35,12 +35,18 @@
     <div class="container">
         <div class="details" id="topic"></div>
 
-        <div id="result"></div>
+        <div id="result" class="grid"></div>
 
-        <div class="wrapper">
+        <div class="wrapper" id="load">
             <button onclick="loadMore()" class="load-more">More Images</button>
         </div>
+
+        <button onclick="gototop()" id="topbtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     </div>
+    <footer class="footer">
+        <p>By <a href="https://www.linkedin.com/in/sujaypujari2216/" target="_blank">Sujay Pujari</a></p>
+        <p>All images are from <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+    </footer>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
